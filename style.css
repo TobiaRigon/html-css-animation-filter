@@ -89,11 +89,29 @@ transition: all .3s ease-in-out;
 }
 
 .ex-10-icon {
+    animation: spin-animation 0.8s linear infinite;
     font-size: 60px;
 }
+
+@keyframes spin-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(359deg);
+    }
+}
+
 .ex-11-icon {
     font-size: 60px;
+    transition: all 0.8s linear;
 }
+
+.ex-11-icon:hover {
+  
+}
+
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
